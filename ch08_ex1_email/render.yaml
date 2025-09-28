@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ch08-ex1-email
+    env: docker
+    plan: free
+    dockerfilePath: ./src/Dockerfile
+    dockerContext: ./src
+    envVars:
+      - key: PORT
+        value: 8080
